@@ -21,21 +21,21 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle btn-primary bg-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Max Temperature</a>
-              <a class="dropdown-item" href="#">Humidity</a>
-              <a class="dropdown-item" href="#">Cloudiness</a>
-              <a class="dropdown-item" href="#">Wind Speed</a>
+              <a class="dropdown-item" href="MaxTemp.html">Max Temperature</a>
+              <a class="dropdown-item" href="Humidity.html">Humidity</a>
+              <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
             </div>
           </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#">Comparison <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="Comparison.html">Comparison <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="#">Data <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="Data.html">Data <span class="sr-only">(current)</span></a>
           </li>
 
       </ul>
@@ -45,18 +45,18 @@
 <body>
 
   <!-- Our rows function in containers (grid created). -->
-  <div class="container-fluid" style="background-color: lightsteelblue;">
+  <div class="container-fluid px-0" style="background-color: lightsteelblue;">
     <!-- Row 1 -->
-    <div class="row">
+    <div class="row mx-2">
       <!-- Column 1 -->
       <div class="col-md-8">
         <!-- Summary Card -->
-        <div class="card ml-5 mr-3 my-5">
+        <div class="card mx-3 my-5">
           <div class="card-body mx-5 my-5">
             <h1 class="card-title mb-5">Summary: Latitude vs X</h1>
             <!-- Image -->
-            <div class="float-left" style="max-width: 50%;">
-              <img src="visualizations/Fig1.png" class="img-fluid" alt="Responsive image">
+            <div class="float-left" style="max-width: 40%; min-width: 20%;">
+              <img src="visualizations/Fig1.png" class="img-fluid" alt="Max Temperature">
             </div>
             <p class="card-text">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. <br> <br> After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed. </p>
           </div>
@@ -65,32 +65,52 @@
     <!-- Column 2 -->
     <div class="col-md-4">
       <!-- Visualization Card -->
-      <div class="card ml-3 mr-5 my-5">
-        <div class="card-body">
-          <h1 class="card-title my-5">Visualizations</h1>
-          <!-- Image -->
-          <div class="float-left">
-            <img src="visualizations/Fig1.png" class="img-fluid" alt="Responsive image">
+      <div class="card mx-3 my-5">
+        <div class="card-body mx-3 my-5">
+          <h1 class="card-title mx-5 mb-5">Visualizations</h1>
+          <div class="row">
+            <div class="col-md-6 col-sm-12 my-2">
+              <a  class="btn btn-outline-primary" href="MaxTemp.html">
+                <img src="visualizations/Fig1.png" class="rounded img-fluid" alt="Max Temperature">
+              </a>
+            </div>
+            <div class="col-md-6 col-sm-12 my-2">
+              <a class="btn btn-outline-primary" href="Humidity.html">
+                <img src="visualizations/Fig2.png" class="rounded img-fluid" alt="Humidity">
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12 my-2">
+              <a class="btn btn-outline-primary" href="Cloudiness.html">
+                <img src="visualizations/Fig3.png" class="rounded img-fluid" alt="Cloudiness">
+              </a>
+            </div>
+            <div class="col-md-6 col-sm-12 my-2">
+              <a class="btn btn-outline-primary" href="WindSpeed.html">
+                <img src="visualizations/Fig4.png" class="rounded img-fluid" alt="Wind Speed">
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
 
-<!-- Footer -->
-<footer class="page-footer font-small blue">
+  </div>
+  <!-- Footer -->
+  <footer class="container-fluid mx-0" style="background-color: #212b3d">
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/education/bootstrap/"> Daniel Ruch</a>
+    <div class="text-center py-3 my-0" style="background-color: #212b3d; color: white;">Created by Daniel Ruch
     </div>
     <!-- Copyright -->
   
   </footer>
   <!-- Footer -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+
 </html>
