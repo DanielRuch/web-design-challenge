@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Data Visualization Dashboard</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light my-0 py-0">
+    <a class="navbar-brand py-2 px-4 my-0" id="nav_title" href="#" style="background-color:  #0840a8;">Lattitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle btn-primary bg-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="MaxTemp.html">Max Temperature</a>
+              <a class="dropdown-item" href="Humidity.html">Humidity</a>
+              <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
+            </div>
+          </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="Comparison.html">Comparison <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="Data.html">Data <span class="sr-only">(current)</span></a>
+          </li>
+
+      </ul>
+    </div>
+  </nav>
+
+<body>
+
+  <!-- Our rows function in containers (grid created). -->
+  <div class="container-fluid px-0" style="background-color: lightsteelblue;">
+    <!-- Row 1 -->
+    <div class="row mx-2">
+      <!-- Column 1 -->
+      <div class="col-md-8">
+        <!-- Summary Card -->
+        <div class="card mx-3 my-5">
+          <div class="card-body mx-5 my-5">
+            <h1 class="card-title mb-5">Wind Speed</h1>
+            <!-- Image -->
+            <div class="col-md-12">
+              <img src="visualizations/Fig4.png" class="img-fluid mx-auto d-block" alt="Wind Speed">
+              <p class="card-text"> Wind speed was noticeably higher in the northern hemisphere than in the south. An interesting trend is that the wind speed also appears to be higher in cities closer to the poles.  </p>
+            </div>
+            <div class="col-md-12">
+              
+            </div>
+            
+          </div>
+        </div>
+    </div>
+    <!-- Column 2 -->
+    <div class="col-md-4">
+      <!-- Visualization Card -->
+      <div class="card mx-3 my-5">
+        <div class="card-body mx-3 my-5">
+          <h1 class="card-title mx-5 mb-5">Visualizations</h1>
+          <div class="row">
+            <div class="col-md-6 col-sm-12 my-2">
+              <a  class="btn btn-outline-primary" href="MaxTemp.html" >
+                <img src="visualizations/Fig1.png" class="rounded img-fluid" alt="Max Temperature">
+              </a>
+            </div>
+            <div class="col-md-6 col-sm-12 my-2">
+              <a class="btn btn-outline-primary" href="Humidity.html">
+                <img src="visualizations/Fig2.png" class="rounded img-fluid" alt="Humidity">
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12 my-2">
+              <a class="btn btn-outline-primary" href="Cloudiness.html">
+                <img src="visualizations/Fig3.png" class="rounded img-fluid" alt="Cloudiness">
+              </a>
+            </div>
+            <div class="col-md-6 col-sm-12 my-2">
+              <a class="btn btn-outline-primary active" href="WindSpeed.html">
+                <img src="visualizations/Fig4.png" class="rounded img-fluid" alt="Wind Speed">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Footer -->
+  <footer class="container-fluid mx-0" style="background-color: #212b3d">
+
+    <!-- Copyright -->
+    <div class="text-center py-3 my-0" style="background-color: #212b3d; color: white;">Created by Daniel Ruch
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
