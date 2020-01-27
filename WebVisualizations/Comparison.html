@@ -13,7 +13,7 @@
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light my-0 py-0 sticky-top">
-    <a class="navbar-brand py-2 px-4 my-0" id="nav_title" href="index.html" style="background-color:  #0840a8;">Latitude</a>
+    <a class="navbar-brand py-2 px-4 my-0" id="nav_title" href="index.html" style="background-color:  darkblue;">Latitude</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -42,75 +42,62 @@
     </div>
   </nav>
 
-<body>
+<body class="py-auto"  style="background-color: lightsteelblue;">
 
   <!-- Our rows function in containers (grid created). -->
-  <div class="container-fluid px-0" style="background-color: lightsteelblue;">
-    <!-- Row 1 -->
+  <div class="container-fluid px-0">
     <div class="row mx-2">
-      <!-- Column 1 -->
-      <div class="col-md-8">
-        <!-- Summary Card -->
+      <!-- Column 2 -->
+      <div class="col-md-12">
+        <!-- Visualization Card -->
         <div class="card mx-3 my-5">
           <div class="card-body mx-5 my-5">
-            <h1 class="card-title mb-5">Max Temperature</h1>
-            <!-- Image -->
-            <div class="col-md-12">
-              <img src="visualizations/Fig1.png" class="img-fluid mx-auto d-block" alt="Max Temperature">
-              <p class="card-text"> As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the souther hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered. </p>
+            <h1 class="card-title mb-5">Comparison: Latitude vs X</h1>
+            <p class="mb-5">Click any plot to get an in-depth analysis. </p>
+            <div class="row">
+              <div class="col-md-6 col-sm-12 my-2">
+                <h2 class="mx-auto"> vs. Max Temperature</h2>
+                <a  class="btn btn-outline-primary" href="MaxTemp.html">
+                  <img src="visualizations/Fig1.png" class="rounded img-fluid" alt="Max Temperature">
+                </a>
+              </div>
+              <div class="col-md-6 col-sm-12 my-2">
+                <h2 class="mx-auto"> vs. Humidity</h2>
+                <a class="btn btn-outline-primary" href="Humidity.html">
+                  <img src="visualizations/Fig2.png" class="rounded img-fluid" alt="Humidity">
+                </a>
+              </div>
             </div>
-            <div class="col-md-12">
-              
-            </div>
-            
-          </div>
-        </div>
-    </div>
-    <!-- Column 2 -->
-    <div class="col-md-4">
-      <!-- Visualization Card -->
-      <div class="card mx-3 my-5">
-        <div class="card-body mx-3 my-5">
-          <h1 class="card-title mx-5 mb-5">Visualizations</h1>
-          <div class="row">
-            <div class="col-md-6 col-sm-12 my-2">
-              <a  class="btn btn-outline-primary active" href="MaxTemp.html" >
-                <img src="visualizations/Fig1.png" class="rounded img-fluid" alt="Max Temperature">
-              </a>
-            </div>
-            <div class="col-md-6 col-sm-12 my-2">
-              <a class="btn btn-outline-primary" href="Humidity.html">
-                <img src="visualizations/Fig2.png" class="rounded img-fluid" alt="Humidity">
-              </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-sm-12 my-2">
-              <a class="btn btn-outline-primary" href="Cloudiness.html">
-                <img src="visualizations/Fig3.png" class="rounded img-fluid" alt="Cloudiness">
-              </a>
-            </div>
-            <div class="col-md-6 col-sm-12 my-2">
-              <a class="btn btn-outline-primary" href="WindSpeed.html">
-                <img src="visualizations/Fig4.png" class="rounded img-fluid" alt="Wind Speed">
-              </a>
+            <div class="row">
+              <div class="col-md-6 col-sm-12 my-2">
+                <h2 class="mx-auto"> vs. Cloudiness</h2>
+                <a class="btn btn-outline-primary" href="Cloudiness.html">
+                  <img src="visualizations/Fig3.png" class="rounded img-fluid" alt="Cloudiness">
+                </a>
+              </div>
+              <div class="col-md-6 col-sm-12 my-2">
+                <h2 class="mx-auto"> vs. Wind Speed</h2>
+                <a class="btn btn-outline-primary" href="WindSpeed.html">
+                  <img src="visualizations/Fig4.png" class="rounded img-fluid" alt="Wind Speed">
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </div>
+  <footer class="mx-auto" style="border-top: 4px solid lightseagreen">
+    <div class="py-5 mx-auto" style="background-color: darkblue;">
+      <div class="container-fluid">
+        <small class="mx-auto px-5" style="color: whitesmoke;"> Created by Daniel Ruch </small>
+      </div>
+    </div>
+  </footer>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
-<footer class="mx-auto" style="border-top: 4px solid lightseagreen">
-  <div class="py-5 mx-auto" style="background-color: darkblue;">
-    <div class="container-fluid">
-      <small class="mx-auto px-5" style="color: whitesmoke;"> Created by Daniel Ruch </small>
-    </div>
-  </div>
-</footer>
+
 
 </html>
